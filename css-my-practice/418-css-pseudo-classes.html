@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    .box *{
+        display: block;
+    }
+
+    .box div:first-child{ /*選取.box中的第一個小孩*/
+        color: red;
+    }
+
+    .box span:first-child{ /*因為不是第一個小孩所以選不到,這時要用first-of-type*/
+        color: red;
+    }
+
+    .box p:last-child{ /*選取.box中的最後一個小孩*/
+        color: red;
+    }
+
+    .box span:first-of-type{/*表示選取.box中的第一個span類別*/
+        color: blue;
+    }
+
+    .box p:first-of-type{/*表示選取.box中的第一個p類別*/
+        color:blue;
+    }
+
+    .box span:last-of-type{/*表示選取.box中的最後一個p類別*/
+        color:cadetblue;
+    }
+
+
+</style>
+
+
+
+</head>
+<body>
+<div class="box">
+    <div>div</div>
+    <span>span</span>
+    <p>p</p>
+    <div>div</div>
+    <span>span</span>
+    <p>p</p>
+    <div>div</div>
+    <span>span</span>
+    <p>p</p>
+    <div>div</div>
+    <span>span</span>
+    <p>p</p>
+    <div>div</div>
+    <span>span</span>
+    <p>p</p>
+</div>
+    
+</body>
+</html>
+
+
+<!--筆記
+
+    :first-child => 只能選第一個屬性
+    :last-child => 只能選最後一個屬性
+    --------------
+    :first-of-type => 可以選第一個類別,可多個
+    :last-of-type => 可以選最後一個類別,可多個
+    --------------
+    :nth-child()
+    :nth-last-child()
+    --------------
+    :nth-of-type()
+    :nth-last-of-type()
+
+-->

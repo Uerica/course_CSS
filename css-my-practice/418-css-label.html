@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      .bgbtn{
+        background-color: #0af;
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgba(0, 100, 100, .5) inset;
+        display: inline-block;
+        vertical-align: middle;
+
+    }
+    .btn{
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        background-color:#fff;
+        border: 1px solid #0ba;
+        box-shadow: 3px 3px 3px rgba(0, 100, 100, .5);
+        position: relative;
+        left: 0;
+        transition: .5s;
+    }
+
+
+    /*沒有定義label的for就選不到唷*/
+    input:checked + label{
+        color: deeppink;
+    }
+
+    input:checked +.bgbtn .btn{
+        left: 60px;
+    }
+
+    #box1{
+        position: absolute;
+        opacity: 0;
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <!--label中包input也可以點擊文字就有作用唷-->
+    <!-- <label>
+    <input type="checkbox" name="" id="">hihi
+    </label> -->
+
+
+    <!--label中定義for,for要填checkbox的id-->
+    <input type="checkbox" name="" id="box1">
+    <div class="bgbtn">
+            <div class="btn"></div>
+        </div>
+    <label for="box1">yoyo</label>
+    
+</body>
+</html>

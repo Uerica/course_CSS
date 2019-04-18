@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            /* background-color: blue; */
+            position: relative;
+            margin: 300px;
+
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            /* vertical-align: middle; */
+            background-color:cornflowerblue;
+            display: block;
+        }
+
+        .A{
+            background-color:lightpink;
+            position:absolute;
+            width: 280px;
+            height: 180px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            text-align: center;
+            transition: .5s;
+          transform: scale(0)
+        }
+
+        .box:hover .A{
+            transform: scale(1.5);
+            border-radius: 20%;
+
+        }
+
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="box">
+        <img src="" alt="">
+        <div class="A"></div>
+    </div>
+
+</body>
+
+</html>

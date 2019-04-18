@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    .ckimg{
+        width: 50px;
+        vertical-align: middle;
+        filter:grayscale(1);
+        transform: scale(.6);
+        transition:transform .5s cubic-bezier(0,-1.65,1,1.95),
+                    filter .1s;
+
+    }
+
+    input:checked +.ckimg{
+        filter:grayscale(0); 
+        transform:scale(1);
+    }
+
+    #box1{
+        position: absolute;
+        opacity: 0;
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+  
+
+    <!--label中定義for,for要填checkbox的id-->
+    <input type="checkbox" name="" id="box1">
+    <img src="checked.svg" class="ckimg">
+    <label for="box1">yoyo</label>
+    
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .boxfa1 {
+            display: flex; /*看主軸資料流橫向 此為橫向*/
+            background-color: slategrey;
+            width: 900px;
+            margin: 10px;
+        }
+
+        .boxfa2 {
+            display: flex; /*看主軸資料流橫向 此為直向*/
+            flex-direction: column;
+            background-color: slategrey;
+            width: 900px;
+            margin: 10px;
+        }
+
+        .boxfa3 {
+            display: flex; /*看主軸資料流橫向 此為橫向空間分隔*/
+            background-color: slategrey;
+            width: 900px;
+            margin: 10px;
+            justify-content: space-around;/*還有space-between*/
+        }
+
+        .boxfa4 {
+            display: flex;/*看主軸資料流橫向 此為直向空間分隔*/
+            background-color: slategrey;
+            width: 900px;
+            height: 500px;
+            margin: 10px;
+            flex-direction: column;
+            justify-content: space-around;/*還有space-between*/
+        }
+
+        .boxfa5 {
+            display: flex;
+            background-color:steelblue;
+            width: 900px;
+            height: 500px;
+            margin: 10px;
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+            /*可以縮寫成下列*/
+            flex-flow: row-reverse wrap;
+
+            /*以下屬性都是有做 flex-wrap 才會用喔!!*/
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            align-content: center;
+            /* align-items: flex-end; */
+            /* align-items: center; */
+
+
+        }
+
+        .boxfa6 {
+            display: flex;
+            background-color:steelblue;
+            width: 900px;
+            height: 500px;
+            margin: 10px;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+
+        }
+
+        .box{
+            color:#0aa;
+            font-size: 50px;
+            /* margin: 20px; */
+        }
+
+        .box1 {
+            background-color: #0ff;
+            width:100px;
+            height: 100px;
+        }
+
+        .box2 {
+            background-color: #faa;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box3 {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="boxfa1">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+
+    <div class="boxfa2">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+
+    <div class="boxfa3">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+
+    <div class="boxfa4">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+
+    <div class="boxfa5">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box1">4</div>
+            <div class="box box2">5</div>
+            <div class="box box3">6</div>
+            <div class="box box1">7</div>
+            <div class="box box2">8</div>
+            <div class="box box3">9</div>
+            <div class="box box1">10</div>
+            <div class="box box2">11</div>
+            <div class="box box3">12</div>
+            <div class="box box1">13</div>
+            <div class="box box2">14</div>
+            <div class="box box3">15</div>
+        </div>
+
+
+        <div class="boxfa6">
+                <div class="box box1">1</div>
+                <div class="box box2">2</div>
+                <div class="box box3">3</div>
+                <div class="box box1">4</div>
+                <div class="box box2">5</div>
+                <div class="box box3">6</div>
+                <div class="box box1">7</div>
+                <div class="box box2">8</div>
+                <div class="box box3">9</div>
+                <div class="box box1">10</div>
+                <div class="box box2">11</div>
+                <div class="box box3">12</div>
+                <div class="box box1">13</div>
+                <div class="box box2">14</div>
+                <div class="box box3">15</div>
+            </div>
+
+<div class="flyflex">
+
+
+
+</div>
+</body>
+
+</html>

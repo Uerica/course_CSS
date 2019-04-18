@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.area{
+			width: 500px;
+			height: 300px;
+			border:3px solid #f00;
+			margin: auto;
+			overflow: hidden;
+		}
+		.content{
+			width: 1500px;
+			font-size: 0;
+			position: relative;
+			left: 0;
+			transition: .5s;
+		}
+		.content.show1{ left: 0; }
+		.content.show2{ left: -500px; }
+		.content.show3{ left: -1000px; }
+		.content li{
+			display: inline-block;
+			font-size: 16px;
+		}
+
+
+
+		.btn-group{
+			text-align: center;
+		}
+		.btn-group .btn{
+			display: inline-block;
+			padding: 10px 20px;
+		}
+		.btn-group .btn.active{
+			background-color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	
+
+
+	<div class="area">
+		<ul class="content show1">
+			<li>
+				<img src="https://api.fnkr.net/testimg/500x300/ffCED1/FFF/?text=A">
+			</li>
+			<li>
+				<img src="https://api.fnkr.net/testimg/500x300/00ffD1/FFF/?text=B">
+			</li>
+			<li>
+				<img src="https://api.fnkr.net/testimg/500x300/00CEff/FFF/?text=C">
+			</li>
+		</ul>
+	</div>
+
+	<div class="btn-group">
+		<div class="btn btn1 active">A</div>
+		<div class="btn btn2">B</div>
+		<div class="btn btn3">C</div>
+	</div>
+
+
+
+
+
+<script type="text/javascript" src="jquery-3.4.0.min.js"></script>
+<script type="text/javascript">
+	
+	$('.btn1').click(function(){
+		$('.btn2,.btn3').removeClass('active');
+		$('.content').removeClass('show2');
+		$('.content').removeClass('show3');
+		$('.btn1').addClass('active');
+		$('.content').addClass('show1');
+	})
+	
+	$('.btn2').click(function(){
+		$('.btn1,.btn3').removeClass('active');
+		$('.content').removeClass('show1');
+		$('.content').removeClass('show3');
+		$('.btn2').addClass('active');
+		$('.content').addClass('show2');
+	})
+	
+	$('.btn3').click(function(){
+		$('.btn1,.btn2').removeClass('active');
+		$('.content').removeClass('show1');
+		$('.content').removeClass('show2');
+		$('.btn3').addClass('active');
+		$('.content').addClass('show3');
+	})
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

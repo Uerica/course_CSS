@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    ul{
+        border-bottom: 2px solid #ccc;
+        margin: 20px;
+        text-align: center;
+
+    }
+    
+    li{
+        display: inline-block;
+        padding-bottom: 10px;
+        margin: 0 25px;
+        position: relative;
+    }
+
+    li::after{
+        content:"";
+        width: 12px;
+        height: 12px;
+        background-color: aqua;
+        border-radius:50%;
+        position: absolute;
+        top: 0;
+        bottom: -29px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    /* 底線&圈圈都是裝飾,讓CODE HEN乾淨 */
+    
+    </style>
+</head>
+<body>
+
+<ul>
+<li>2019-04-16</li>
+<li>2019-04-16</li>
+<li>2019-04-16</li>
+<li>2019-04-16</li>
+</ul>
+
+
+
+    
+</body>
+</html>

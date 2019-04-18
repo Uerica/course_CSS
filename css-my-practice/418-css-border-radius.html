@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 20px 0px; /*設定兩個左上+右下 右上+左下*/
+    margin: 20px 0;
+
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 20px 0px 50px; /*設定三個左上 右上+左下(斜角) 右下*/
+    margin: 20px 0;
+}
+
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color:chartreuse;
+    border-radius:20px 0px 10px 30px; /*設定四個左上 右上  左下 右下*/
+    margin: 20px 0;
+}
+
+.box4{
+    width: 200px;
+    height: 200px;
+    background-color:darksalmon;
+    border-radius:300px 400px 100px 100px;
+    margin: 20px 0;
+}
+
+.box5{
+    width: 200px;
+    height: 200px;
+    background-color:darksalmon;
+    border-radius:42.8% 57.1% 14.2% 14.2%;
+    margin: 20px 0;
+}
+
+/*如果圓角兩半徑相加>正方形本身任一邊寬高,圓角會重新計算*/
+/*計算方式為最常兩圓角半徑相加(ex.a+b),再將各圓角半徑換算成%數(a/(a+b),*/
+
+
+.box6{
+    width: 500px;
+    height: 100px;
+    background-color:deeppink;
+    border-radius:1000px;
+    margin: 20px 0;
+}
+
+.box7{
+    width: 500px;
+    height: 100px;
+    background-color:deeppink;
+    border-radius:50px;
+    margin: 20px 0;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+
+    <div class="box6"></div>
+    <div class="box7"></div>
+</body>
+</html>

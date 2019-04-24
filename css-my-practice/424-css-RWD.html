@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* .box {
+            width: 300px;
+            height: 300px;
+            background-color: rebeccapurple;
+        } */
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            width: 100%;
+            margin: auto;
+        }
+
+        .item {
+            border-color: rosybrown;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+
+
+        }
+
+        .item img {
+            width: 100%;
+        }
+
+        /* 媒體查詢 要把class名稱寫在內 @media 條件1 and (條件2) */
+        /* @media screen and (max-width:767px) { 
+            .box {
+                background-color: red;
+                width: 100px;
+            }
+        } */
+
+        @media screen and (min-width:768px) {
+            .wrap {
+                max-width: 1200px;
+                display: flex;
+            }
+
+            .item {
+                margin: 0.833333%;
+                width: 31.666666%;
+            }
+        }
+
+        /* ---------------------------------------------- */
+        .wrap2 {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .itembox {
+            margin: 10px;
+        }
+
+      
+
+        .itembox img {
+            width: 100%;
+        }
+
+        .txt {
+            width: 100%;
+            padding: 10px;
+            background-color: #0af;
+        }
+
+        @media screen and (min-width:768px) {
+            .wrap2 {
+                width: 900px;
+                margin: auto;
+
+            }
+
+            .itembox {
+                display: flex;
+              
+            }
+
+            .itembox img {
+                width: 50%;
+                position: relative;
+                right: -10px;
+
+            }
+
+            .txt {
+                width: 50%;
+                position: relative;
+                left:-10px;
+                display: flex;
+                align-items: flex-end;
+            }
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <div class="box"></div> -->
+
+    <div class="wrap">
+        <div class="item">
+            <img src="http://fakeimg.pl/300x250/" alt="">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, dolore.</p>
+        </div>
+        <div class="item">
+            <img src="http://fakeimg.pl/300x250/" alt="">
+            <h3>title</h3>
+            <p>Facilis perferendis nulla fuga vel dolor harum enim fugit nisi.</p>
+        </div>
+        <div class="item">
+            <img src="http://fakeimg.pl/300x250/" alt="">
+            <h3>title</h3>
+            <p>Quod neque tenetur alias voluptatum. Labore aspernatur veritatis saepe temporibus.</p>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------- -->
+    <div class="wrap2">
+
+        <div class="itembox">
+            
+                <img src="http://fakeimg.pl/300x250/" alt="">
+            
+            <div class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, expedita.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Tempora, expedita.</div>
+        </div>
+
+        <div class="itembox">
+          
+                <img src="http://fakeimg.pl/300x250/" alt="">
+           
+            <div class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, expedita.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Tempora, expedita.</div>
+        </div>
+
+        <div class="itembox">
+           
+                <img src="http://fakeimg.pl/300x250/" alt="">
+           
+            <div class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, expedita.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Tempora, expedita.</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

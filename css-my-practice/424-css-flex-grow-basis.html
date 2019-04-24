@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Document</title>
+    <style>
+
+        
+    .wrap{
+        width: 900px;
+        border: 1px solid red;
+        display: flex;
+    }
+    
+    .item{
+        width: 200px;
+        height: 200px;
+        background-color: #ccc;
+        margin: 5px;
+        
+    }
+    .item1{
+        background-color: deeppink;
+        font-size: 30px;
+        color:#fff;
+
+    }
+
+    .item2{
+        background-color: deepskyblue;
+        flex-grow: 4;
+        font-size: 30px;
+        color:#fff;
+    }
+    .item3{
+        background-color: aquamarine;
+        flex-grow: 2;
+        font-size: 30px;
+        color:#fff;
+    }
+
+    /* flex-grow 的算法為 剩下空間 / 總共有幾份flex-grow * flex-grow值 */
+    
+    
+    /* ---------------------------------------------- */
+    /* flex-basis: 會直接更動主軸高或寬 主軸row更動寬 col更動高 */
+
+    .wrap1{
+        width: 900px;
+        border: 1px solid red;
+        display: flex;
+    }
+    
+    .item{
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+        
+    }
+    .item4{
+        background-color: deeppink;
+        font-size: 30px;
+        color:#fff;
+        flex-basis: 100px;
+
+    }
+
+    .item5{
+        background-color: deepskyblue;
+        font-size: 30px;
+        color:#fff;
+        flex-basis: 100px;
+    }
+    .item6{
+        background-color: aquamarine;
+        font-size: 30px;
+        color:#fff;
+        flex-basis: 100px;
+    }
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+
+
+    <!-- -------------------------------------- -->
+
+    <div class="wrap1">
+            <div class="item item4">4</div>
+            <div class="item item5">5</div>
+            <div class="item item6">6</div>
+    </div>
+
+</body>
+</html>

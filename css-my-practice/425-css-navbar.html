@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    nav{
+        height: 10vh;
+        background-color: #87ceeb;
+        position: relative;
+    }
+
+    .nav-links{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        background-color:salmon;
+        height:100vh;
+        margin-left:auto;
+        justify-content: space-around;
+        align-items: center;
+        /* clip-path: circle(100px at 90% -10%);       */
+    }
+
+    .nav-bar{
+        position: absolute;
+        right: 5%;
+        top:50%;
+        transform: translate(-5%,-50%);
+        cursor: pointer;
+    }
+
+    .line{
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        margin: 5px;
+        
+    }
+    
+
+
+    .nav-links li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+    }
+    
+
+    
+    
+    
+    
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-bar">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+</body>
+
+</html>

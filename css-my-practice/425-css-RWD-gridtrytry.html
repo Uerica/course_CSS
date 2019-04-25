@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .yoyobox2 {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 0 10px;
+          
+
+        }
+
+        .hahabox3 {
+            width: 33.3333333%;
+            box-sizing: border-box;
+            padding: 0 10px;
+         
+         
+        }
+
+        .yoyobox4 {
+            width:25%;
+            box-sizing: border-box;
+            padding: 0 10px;
+
+        }
+  
+        
+        .item{
+            height: 200px;
+            background-color: cornflowerblue;
+            border: 10px solid #ff0;
+
+        }
+
+        .lala {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            margin: 0 0 20px;
+            flex-flow: row wrap;
+        }
+
+        @media screen and (max-width:768px){
+            .lala{
+                flex-flow: column;
+                
+            }
+
+            .yoyobox2{
+                width: 100%;
+            }
+
+            .hahabox3{
+                width: 100%; 
+            }
+
+            .yoyobox4{
+                width: 100%; 
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lala"><div class="itme"></div>
+        <div class="yoyobox2"><div class="item">yoyo</div></div>
+        <div class="yoyobox2"><div class="item">haha</div></div>
+    </div>
+
+    <div class="lala">
+            <div class="hahabox3"><div class="item">yoyo</div></div>
+            <div class="hahabox3"><div class="item">haha</div></div>
+            <div class="hahabox3"><div class="item">yoyo</div></div>
+        </div>
+        <div class="lala">
+                <div class="yoyobox4"><div class="item">yoyo</div></div>
+                <div class="yoyobox4"><div class="item">haha</div></div>
+                <div class="yoyobox4"><div class="item">yoyo</div></div>
+                <div class="yoyobox4"><div class="item">haha</div></div>
+        </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+$bgc:#ccc;
+$iamw:10px;
+
+
+.hihi{
+    width: 100px;
+    position: relative;
+    .hihisun{
+        width: 20px;
+        background-color: $bgc;
+        ::before{
+            content: '';
+            position: absolute;
+            width: $iamw;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.hihi {
+  width: 100px;
+  position: relative;
+}
+
+.hihi .hihisun {
+  width: 20px;
+  background-color: #ccc;
+}
+
+.hihi .hihisun ::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+}
+/*# sourceMappingURL=425-scss-trytry.css.map */

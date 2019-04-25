@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,KAAK,CAAA;EACD,KAAK,EAAE,KAAK;EACZ,QAAQ,EAAE,QAAQ;CAUrB;;AAZD,AAGI,KAHC,CAGD,QAAQ,CAAA;EACJ,KAAK,EAAE,IAAI;EACX,gBAAgB,EATnB,IAAI;CAeJ;;AAXL,AAMQ,KANH,CAGD,QAAQ,CAGJ,QAAQ,CAAA;EACJ,OAAO,EAAE,EAAE;EACX,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAZX,IAAI;CAaD",
+    "sources": [
+        "425-scss-trytry.scss"
+    ],
+    "names": [],
+    "file": "425-scss-trytry.css"
+}

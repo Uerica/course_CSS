@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .col-1 {
+            padding: 0 15px;
+            box-sizing: border-box;
+            width: 8.333333%;
+        }
+
+        .col-2 {
+            padding: 0 15px;
+            box-sizing: border-box;
+            width: 16.666666%;
+        }
+
+        .col-3 {
+            padding: 0 15px;
+            box-sizing: border-box;
+            width: 25%;
+        }
+
+        .col-4 {
+            padding: 0 15px;
+            box-sizing: border-box;
+            width: 33.333333%;
+        }
+
+        .col-5 {
+            padding: 0 15px;
+            box-sizing: border-box;
+            width: 41.666666%;
+        }
+
+        .col-6 {
+            padding: 0 15px;
+            box-sizing: border-box;
+            width: 50%;
+        }
+
+        .col-7 {
+            padding: 0 15px;
+            box-sizing: border-box;
+            width: 58.333333%;
+        }
+
+        .col-8 {
+            padding: 0 15px;
+            box-sizing: border-box;
+            width: 66.666666%;
+        }
+
+        .col-9 {
+            padding: 0 15px;
+            box-sizing: border-box;
+            width: 75%;
+        }
+
+        .col-10 {
+            padding: 0 15px;
+            box-sizing: border-box;
+            width: 83.333333%;
+        }
+
+        .col-11 {
+            padding: 0 15px;
+            box-sizing: border-box;
+            width: 91.666666%;
+        }
+
+        .col-12 {
+            padding: 0 15px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        @media screen and (min-width:768px) {
+            .col-m-1 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 8.333333%;
+            }
+
+            .col-m-2 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 16.666666%;
+            }
+
+            .col-m-3 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 25%;
+            }
+
+            .col-m-4 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 33.333333%;
+            }
+
+            .col-m-5 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 41.666666%;
+            }
+
+            .col-m-6 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 50%;
+            }
+
+            .col-m-7 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 58.333333%;
+            }
+
+            .col-m-8 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 66.666666%;
+            }
+
+            .col-m-9 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 75%;
+            }
+
+            .col-m-10 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 83.333333%;
+            }
+
+            .col-m-11 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 91.666666%;
+            }
+
+            .col-m-12 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            .col-l-1 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 8.333333%;
+            }
+
+            .col-l-2 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 16.666666%;
+            }
+
+            .col-l-3 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 25%;
+            }
+
+            .col-l-4 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 33.333333%;
+            }
+
+            .col-l-5 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 41.666666%;
+            }
+
+            .col-l-6 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 50%;
+            }
+
+            .col-l-7 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 58.333333%;
+            }
+
+            .col-l-8 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 66.666666%;
+            }
+
+            .col-l-9 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 75%;
+            }
+
+            .col-l-10 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 83.333333%;
+            }
+
+            .col-l-11 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 91.666666%;
+            }
+
+            .col-l-12 {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 100%;
+            }
+        }
+
+        .box{
+			display: flex;
+			flex-flow: row wrap;
+			max-width: 1200px;
+			margin: auto;
+            background-color: deepskyblue;
+		}
+
+        .img{
+            padding-bottom: 80px;
+        }
+
+        .img img{
+			width: 100%;
+			vertical-align: middle;
+			position: relative;
+			right: -100px;
+		}
+		.txt{
+			height: 100%;
+			display: flex;
+			align-items:flex-end;
+		}
+		.txt p{
+			padding: 20px;
+			background-color:lightpink;
+			position: relative;
+			left: -100px;
+			margin-bottom: 40px;
+		}
+        
+/* 
+        .wrap {
+            display: flex;
+            flex-flow: row wrap;
+            min-width: 500px;
+        } */
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="wrap">
+        <div class="col-3 col-m-6 col-l-12">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,</p>
+            </div>
+        </div>
+        <div class="col-3 col-m-6 col-l-12">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,</p>
+            </div>
+        </div>
+        <div class="col-3 col-m-6 col-l-12">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,</p>
+            </div>
+        </div>
+        <div class="col-3 col-m-6 col-l-12">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="col-3 col-m-6 col-l-12">
+            <div class="item">1</div>
+        </div>
+        <div class="col-3 col-m-6 col-l-12">
+            <div class="item">2</div>
+        </div>
+        <div class="col-3 col-m-6 col-l-12">
+            <div class="item">3</div>
+        </div>
+        <div class="col-3 col-m-6 col-l-12">
+            <div class="item">4</div>
+        </div>
+    </div> -->
+
+
+
+
+
+    <div class="box">
+        <div class="itema col-6">
+            <div class="img">
+
+                <img src="http://fakeimg.pl/300x250" alt="">
+            </div>
+        </div>
+        <div class="itema col-6">
+            <div class="txt">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aperiam labore id voluptates.
+                    Numquam minus blanditiis, laborum eaque, id nihil autem perspiciatis earum maiores nobis, sed
+                    consequuntur minima explicabo ipsum?</p>
+            </div>
+        </div>
+        <div class="itema col-6">
+                <div class="img">
+    
+                    <img src="http://fakeimg.pl/300x250" alt="">
+                </div>
+            </div>
+            <div class="itema col-6">
+                <div class="txt">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aperiam labore id voluptates.
+                        Numquam minus blanditiis, laborum eaque, id nihil autem perspiciatis earum maiores nobis, sed
+                        consequuntur minima explicabo ipsum?</p>
+                </div>
+            </div>
+            <div class="itema col-6">
+                    <div class="img">
+        
+                        <img src="http://fakeimg.pl/300x250" alt="">
+                    </div>
+                </div>
+                <div class="itema col-6">
+                    <div class="txt">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aperiam labore id voluptates.
+                            Numquam minus blanditiis, laborum eaque, id nihil autem perspiciatis earum maiores nobis, sed
+                            consequuntur minima explicabo ipsum?</p>
+                    </div>
+                </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

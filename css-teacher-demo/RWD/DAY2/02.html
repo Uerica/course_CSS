@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<style type="text/css">
+		:root{
+			--csscoke: #00F;
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.wrap{
+			width: 100%;
+			max-width: 1200px;
+			margin: auto;
+			display: flex;
+			flex-flow: wrap row;
+			background-color: #faa;
+		}
+		.item{
+			width: calc(100% - 30px);
+			background-color: var(--csscoke);
+			margin:0 15px 30px;
+		}
+		@media screen and (min-width: 768px){
+			.item{
+				width: calc((100% / 2) - (15px * 2));
+			}
+		}
+		@media screen and (min-width: 992px){
+			.item{
+				width: calc((100% / 3) - (15px * 2));
+			}
+		}
+		@media screen and (min-width: 1200px){
+			.item{
+				width: calc((100% / 4) - (15px * 2));
+			}
+		}
+
+		.xx,.oo,.aa{
+			width: 50px;
+			height: 50px;
+			margin: 10px;
+			background-color: var(--csscoke);
+		}
+	</style>
+</head>
+<body>
+	
+<div class="wrap">
+	<div class="item">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, illum?</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+	<div class="item">9</div>
+	<div class="item">10</div>
+</div>
+
+<div class="xx"></div>
+<div class="oo"></div>
+<div class="aa"></div>
+
+
+</body>
+</html>

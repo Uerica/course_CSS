@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       
+        .wrap {
+            width: 100%;
+        }
+
+        .box {
+            width: 56%;
+            padding-bottom: 31.5%;
+            /* padding%吃父層寬度 */
+            background-color: gold;
+            margin: 20px 0;
+        }
+
+        .wrapa {
+            width: 100%;
+            display: flex;
+            margin: auto;
+        
+        }
+
+        .item{
+            width: 50%;
+            background-color: cornflowerblue;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+        }
+        .mv{
+            width: 100%;
+            padding-bottom: 56.25%;                                                                                                                                                                                                                                                                                                                                                                                                 /* 315 / 560 * 100 */
+            height: 0;
+            background-color: deeppink;
+            position: relative;
+        }
+        .mv iframe{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        
+        .wrapb{
+            background-color:darkturquoise;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+        }
+
+        .txt{
+            padding: 
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="box"></div>
+
+    </div>
+
+
+    <div class="wrapa">
+        <div class="item">
+            <div class="mv">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JGwWNGJdvx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="item">
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorem impedit, omnis vitae,
+                    dignissimos
+                    expedita, at illo temporibus facilis nam labore dolorum harum totam dolor? Aperiam id dolore aut
+                    dolorem.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="wrapb">
+        <div class="test">
+            <div class="txt">Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. In aspernatur qui at fugiat consectetur, nostrum eveniet debitis accusantium saepe expedita. Temporibus reprehenderit hic quibusdam eius, aliLorem ipsum, dolor sit amet consectetur adipisicing elit. In aspernatur qui at fugiat consectetur, nostrum eveniet debitis accusantium saepe expedita. Temporibus reprehenderit hic quibusdam eius, aliquid sit placeat nam culpa.quid sit placeat nam culpa.ipsum, dolor sit amet consectetur adipisicing elit. In aspernatur qui at fugiat consectetur, nostrum eveniet debitis accusantium saepe expedita. Temporibus reprehenderit hic quibusdam eius, aliquid sit placeat nam culpa.</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+$item_gap: 15px;
+$csscoke: #f00;
+
+
+.wrap{
+    width: 100%;
+    max-width: 1200px;
+
+    .item{
+        width: $item_gap;
+        background-color: $csscoke;
+
+        &:before{
+            content:'';
+        }
+    }
+
+    // .item:before{}
+
+
+}

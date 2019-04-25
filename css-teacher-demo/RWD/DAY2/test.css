@@ -1,0 +1,14 @@
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.wrap .item {
+  width: 15px;
+  background-color: #f00;
+}
+
+.wrap .item:before {
+  content: '';
+}
+/*# sourceMappingURL=test.css.map */

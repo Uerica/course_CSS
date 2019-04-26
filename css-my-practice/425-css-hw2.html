@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     .wrap{
+         width: 100%;
+         margin: auto;
+     }
+
+     .item{
+         width: 100%;
+     }
+     .mv iframe{
+         width: 100%;
+
+     }
+
+     @media screen and (min-width:768px){
+         .wrap{
+         
+			max-width: 1200px;
+		
+			display: flex;
+
+         }
+         .item{
+             width: 50%;
+             display: flex;
+             align-items: center;
+            
+         }
+         .txt p{
+             background-color: cornflowerblue;
+         }
+        
+         .mv{
+             width: 100%;
+             padding-bottom: 56.25%;
+             height: 0;
+             position: relative;
+
+         }
+
+         .mv iframe{
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         
+         }
+         
+     }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="mv">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/E4nmA5oVflo" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="item">
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam veritatis consequatur animi deleniti
+                    cum mollitia, rerum omnis soluta voluptates odit molestias unde officia quisquam sint eos earum eius
+                    iusto exercitationem.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

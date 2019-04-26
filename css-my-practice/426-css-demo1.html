@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 100%;
+            position: relative;
+        }
+
+        .txt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .txt p {
+            padding: 0 30px;
+            box-sizing: border-box;
+            top: 0;
+            left: 0;
+        }
+
+        .map {
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            position: relative
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+
+        }
+
+        @media screen and (min-width:786px) {
+           
+
+            .map{
+                padding-bottom: 45%;
+         
+            }
+            .txt{
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                justify-content: flex-end;
+                box-sizing: border-box;
+                padding: 20px;
+
+            }
+
+            .txt p{
+                width: 30%;
+                background-color:cornflowerblue;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7234.059337285896!2d121.1932378!3d24.9651052!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823eaaf89b555%3A0x61bd9288aaa8e9d0!2zMjTCsDU3JzUzLjkiTiAxMjHCsDExJzM2LjEiRQ!5e0!3m2!1szh-TW!2stw!4v1556237328396!5m2!1szh-TW!2stw"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="txt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, sunt fugit? Quia odio accusamus
+                repellendus maxime nobis quis, nesciunt esse non inventore, vel, consequatur modi fugiat voluptate a?
+                Placeat, eligendi.</p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

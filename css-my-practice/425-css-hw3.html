@@ -10,11 +10,10 @@
         .wrap {
             width: 100%;
             margin: auto;
+            background-color: coral;
         }
 
-        .item {
-            width: 100%;
-        }
+        
 
         .map iframe {
             width: 100%;
@@ -22,60 +21,39 @@
         }
 
         @media screen and (min-width:768px) {
-            .wrap {
-
-                max-width: 1200px;
-                margin: auto;
-                display: flex;
-                flex-flow: column;
-                height: 100%;
-
-
-
-            }
-
-
-
-
-
-            .map {
-                width: 100%;
-                padding-bottom: 75%;
-                height: 0;
+            .wrap{
                 position: relative;
-
-
             }
-
-            .map iframe {
-                width: 100%;
-                height: 100%;
+            .txt{
                 position: absolute;
-
-
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
             }
 
         }
+
     </style>
 
 </head>
 
 <body>
     <div class="wrap">
-        <div class="item">
+       
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7234.059337285896!2d121.1932378!3d24.9651052!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823eaaf89b555%3A0x61bd9288aaa8e9d0!2zMjTCsDU3JzUzLjkiTiAxMjHCsDExJzM2LjEiRQ!5e0!3m2!1szh-TW!2stw!4v1556237328396!5m2!1szh-TW!2stw"
                     width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
+       
+
+        <div class="txt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit hic eius labore accusantium, officia
+                molestias voluptate harum quae accusamus quas quos exercitationem quibusdam ea optio fuga dicta,
+                amet voluptas ut.</p>
         </div>
-        <div class="item">
-            <div class="txt">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit hic eius labore accusantium, officia
-                    molestias voluptate harum quae accusamus quas quos exercitationem quibusdam ea optio fuga dicta,
-                    amet voluptas ut.</p>
-            </div>
-        </div>
+
+
     </div>
 
 </body>

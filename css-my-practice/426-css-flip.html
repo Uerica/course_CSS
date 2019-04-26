@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .wrap {
+            width: 200px;
+            height: 300px;
+            border: 2px solid #0fa;
+            position: relative;
+            margin: auto;
+            perspective: 300px;
+            /* 寫在父層(動子層) 或寫在變形後面(動本尊) */
+        }
+
+        .wrap div {
+            width: 100%;
+            height: 100%;
+            font-size: 60px;
+            line-height: 300px;
+            position: absolute;
+            text-align: center;
+            transition: 3s;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            /* 元素背面透明 */
+        }
+
+        .f {
+            transform: rotateY(0deg);
+            background-color:deepskyblue
+        }
+
+        .b {
+            transform: rotateY(180deg);
+            background-color: #ff0;
+        }
+
+        .wrap:hover .f{
+            transform: rotateY(180deg);
+        }
+
+        .wrap:hover .b{
+            transform: rotateY(360deg);
+        }
+
+
+
+        .box{
+            perspective: 300px;
+            border: 5px solid deepskyblue;
+            width: 600px;
+            height: 500px;
+            margin: auto;
+            position: relative;
+            margin-top: 50px;
+
+        }
+
+        .box1 p{
+            position:absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color:deeppink;
+        }
+
+        
+    </style>
+
+
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+    <div class="wrap">
+        <div class="f">F</div>
+        <div class="b">B</div>
+
+    </div>
+
+
+    <div class="box">
+        <div class="box1">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non optio veniam explicabo nobis cumque illo rerum excepturi, dignissimos inventore cupiditate quo nesciunt sed culpa quam ipsam fugiat beatae voluptate quia!</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

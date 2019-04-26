@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    .box{
+        width: 800px;
+        height: 500px;
+        border:3px solid #0fa;
+        position: relative;
+        perspective: 300px;
+        margin: auto;
+    }
+    .dice{
+        width: 200px;
+        height: 200px;
+        border:3px solid #0aa;
+        position:absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        transform-style: preserve-3d;
+        animation: hi 20s infinite;
+
+    }
+
+
+    .dice div{
+        width: 100%;
+        height: 100%;
+        border: #f8d 1px solid;
+        font-size: 60px;
+        text-align: center;
+        line-height: 200px;
+        position:absolute;
+    }
+
+
+    .a{
+        transform: rotateX(0deg) translateZ(100px);
+    }
+    .b{
+        transform: rotateY(180deg)  translateZ(100px);
+    }
+
+    .c{
+        transform: rotateX(90deg)  translateZ(100px);
+    }
+
+    .d{
+        transform: rotateX(270deg)  translateZ(100px);
+    }
+
+    .e{
+        transform: rotateY(270deg)  translateZ(100px);
+    }
+
+    .f{
+        transform: rotateY(90deg)  translateZ(100px);
+    }
+ 
+
+    
+    @keyframes hi{
+        0%{
+            transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+        }
+        20%{
+            transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg);
+        }
+        40%{
+            transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+        }
+        60%{
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+        }
+        80%{
+            transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+        }
+        100%{
+            transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg);
+        }
+    }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="box">
+<div class="dice">
+    <div class="a">F</div>
+    <div class="b">B</div>
+    <div class="c">T</div>
+    <div class="d">D</div>
+    <div class="e">L</div>
+    <div class="f">R</div>
+</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            background-color: #ccc;
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            line-height: 100px;
+            text-align: center;
+            display: inline-block;
+            margin: 2px 0;
+        }
+
+        .x14{
+            background-color: #ff0;
+            transform: scale(0.5);
+            transition: .5s;
+        }
+
+        .x14:hover{
+            transform: scale(1.5);
+        }
+
+        .x32{
+            background-color: #0f0;
+            transform: skew(30deg);
+            transition: .5s;
+        }
+        
+        .x32:hover{
+            transform: skew(-45deg);
+        }
+
+        .x38{
+            background-color:deeppink;
+            transform: rotate(45deg);
+            transition: .5s;
+        }
+
+        .x38:hover{
+            transform: translate(150px) scale(3);
+        }
+
+        
+        .x50{
+            background-color:deepskyblue;
+            transform:rotate(45deg) translate(0px);
+            transition: .5s;
+        }
+
+        .x50:hover{
+            transform: rotate(45deg) translate(150px);
+        }
+        .x1{
+            background-color:deepskyblue;
+            transform:rotate(45deg) translate(0px);
+            transition: 3s;
+        }
+
+        .x1:hover{
+            transform: rotate(45deg) translate(150px);
+        }
+
+        .x11{
+            background-color:deepskyblue;
+            transform:rotate(45deg) translate(0px);
+            clip-path: circle(50% at 50% 50%);
+            transition: 2s;
+        }
+
+        .x11:hover{
+            transform: rotate(45deg) translate(150px);
+
+        }
+
+        .x25{
+            background-color:deepskyblue;
+            transform:rotate(0deg);
+            transform-origin:10px 20px;
+            transition: .5s;
+
+        }
+
+        .x25:hover{
+            background-color:deeppink;
+            transform: rotate(45deg);
+            transform-origin: (10px 20px);
+          
+            
+        }
+
+        .x25{
+            background-color:deepskyblue;
+            transform:perspective(150px) rotateY(0deg);
+        
+            transition: .5s;
+
+        }
+
+        .x25:hover{
+            background-color:deepskyblue;
+            transform:perspective(150px) rotateY(45deg);
+        
+            transition: .5s;
+            
+        }
+
+      .a{
+          width: 500px;
+          height: 300px;
+          border: 5px solid #0fd;
+          position: relative;
+          perspective: 100px
+      }
+      
+      .b{
+          width: 200px;
+          height: 200px;
+          background-color: cornflowerblue;
+          position: absolute;
+          top:0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          transform:rotateY(0deg);
+          transition:1s;
+      }
+
+      .b:hover{
+          transform:rotateY(180deg);
+      }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="box">
+            <li class="x1">1</li>
+            <li class="x2">2</li>
+            <li class="x3">3</li>
+            <li class="x4">4</li>
+            <li class="x5">5</li>
+            <li class="x6">6</li>
+            <li class="x7">7</li>
+            <li class="x8">8</li>
+            <li class="x9">9</li>
+            <li class="x10">10</li>
+            <li class="x11">11</li>
+            <li class="x12">12</li>
+            <li class="x13">13</li>
+            <li class="x14">14</li>
+            <li class="x15">15</li>
+            <li class="x16">16</li>
+            <li class="x17">17</li>
+            <li class="x18">18</li>
+            <li class="x19">19</li>
+            <li class="x20">20</li>
+            <li class="x21">21</li>
+            <li class="x22">22</li>
+            <li class="x23">23</li>
+            <li class="x24">24</li>
+            <li class="x25">25</li>
+            <li class="x26">26</li>
+            <li class="x27">27</li>
+            <li class="x28">28</li>
+            <li class="x29">29</li>
+            <li class="x30">30</li>
+            <li class="x31">31</li>
+            <li class="x32">32</li>
+            <li class="x33">33</li>
+            <li class="x34">34</li>
+            <li class="x35">35</li>
+            <li class="x36">36</li>
+            <li class="x37">37</li>
+            <li class="x38">38</li>
+            <li class="x39">39</li>
+            <li class="x40">40</li>
+            <li class="x41">41</li>
+            <li class="x42">42</li>
+            <li class="x43">43</li>
+            <li class="x44">44</li>
+            <li class="x45">45</li>
+            <li class="x46">46</li>
+            <li class="x47">47</li>
+            <li class="x48">48</li>
+            <li class="x49">49</li>
+            <li class="x50">50</li>
+        </ul>
+    </div>
+
+
+    <div class="a">
+        <div class="b">
+        </div>
+    </div>
+</body>
+
+</html>

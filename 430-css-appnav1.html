@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* 隱藏input */
+        #menu_control {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            height: 40px;
+        }
+
+        .logo {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 6px 10px;
+            background-color: turquoise;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img{
+            vertical-align: middle;
+        }
+
+        .hb{
+			display: block;
+			width: 36px;
+			height: 36px;
+			box-sizing: border-box;
+			border:1px solid palevioletred;
+			margin-left: auto;
+			position: relative;
+		}
+
+        /* 因為漢堡選單要變XX 所以用定位 不然可以直接用flex屬性讓漢堡分~開~ */
+
+       
+        
+		.hb .line{
+			display: block;
+			width: 30px;
+			height: 2px;
+			background-color: #888;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+			transition: .3s;
+		}
+
+        .hb .line1 {
+            top:8px;
+            transform: rotate(0deg);
+        }
+
+        .hb .line2 {
+            top: 16px;
+            opacity: 1;
+        }
+
+        .hb .line3 {
+            bottom: 8px;
+            transform: rotate(0deg);
+        }
+
+        #menucontrol:checked ~ .header .line1{
+            top : 16px;
+            transform: rotate(45deg);
+        }
+
+        #menu_control:checked ~ .header .line2{
+           opacity: 0;
+           
+        }
+
+        #menu_control:checked ~ .header .line3{
+            bottom : 16px;
+            transform: rotate(-45deg);
+        }
+
+        nav{
+			position: absolute;
+			top: 48px;
+			right: 0;
+			width: 80%;
+			height: calc(100vh - 48px);
+			background-color:#0af;
+			transform: translateX(99%);
+			transition: .5s;
+		}
+
+        
+        #menu_control:checked ~ .header nav{
+			transform: translateX(0px);
+        }
+		
+		nav a{
+			display: block;
+			padding: 10px 20px;
+			color: #fff;
+			text-decoration: none;
+			border-bottom: 1px solid #fff;
+		}
+
+
+        
+
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="menu_control">
+
+    <div class="header">
+        <div class="logo">
+            <a href="#"><img src="http://fakeimg.pl/100x30" alt=""></a>
+
+            <label for="menu_control" class="hb">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </label>
+        </div>
+    
+
+    <nav>
+        <a href="#" class="link">link</a>
+        <a href="#" class="link">link</a>
+        <a href="#" class="link">link</a>
+        <a href="#" class="link">link</a>
+        <a href="#" class="link">link</a>
+        <a href="#" class="link">link</a>
+    </nav>
+</div>
+
+    <main>
+        <p>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repellat tempora architecto totam
+                mollitia asperiores et autem vel voluptatum voluptatibus sunt alias, ut eveniet dignissimos iure? Alias
+                iure minus amet.</span>
+            <span>Placeat nostrum architecto nulla repellat cumque veniam labore quas cum praesentium. Soluta amet totam
+                quidem minima, natus illum magnam fugiat hic veniam nulla atque, eos quos assumenda ad illo
+                culpa.</span>
+            <span>Iusto earum voluptatum ullam, officia nam labore tempore quasi. Rerum velit quod quia, ratione ipsa
+                ducimus, nulla voluptatibus quaerat odio nam, doloribus fugiat deserunt quam ipsam earum. Adipisci,
+                aliquid quibusdam!</span>
+            <span>Maxime culpa optio excepturi quae, voluptas illum provident architecto nostrum nisi voluptatibus illo
+                dolorum voluptatum cumque ipsum. Ipsa error voluptatibus ab fuga dicta assumenda et dolorum. Voluptatum
+                facere quo ipsum.</span>
+            <span>Voluptas labore quam aliquam, nobis pariatur eum. Quidem aut architecto nobis, rem illum voluptates
+                assumenda nemo quis consectetur fugit unde, minima laudantium odio vitae. Ducimus neque illum ipsum
+                excepturi asperiores.</span>
+            <span>Illo consequuntur repellendus vitae minus iusto quo architecto ducimus deleniti sed eum? Eveniet
+                corrupti adipisci labore natus voluptas totam magni suscipit ipsa, consectetur veniam expedita? Optio
+                consequatur omnis atque dolor.</span>
+            <span>Maiores iusto quae obcaecati. Nulla accusantium eaque, nemo, quam nisi, reprehenderit numquam laborum
+                iusto quasi facilis voluptatibus ipsam ducimus tempore laudantium fugit amet sit veritatis? Cum eligendi
+                veniam cumque. Excepturi.</span>
+            <span>Vel voluptates velit soluta, voluptatum ratione consectetur illo molestias libero, cupiditate
+                assumenda architecto sed itaque nostrum sit. Asperiores possimus ad nulla doloribus reprehenderit ipsum
+                architecto saepe, placeat rem, in soluta!</span>
+            <span>Perspiciatis esse possimus velit accusantium dignissimos quo quae eius nostrum magnam aliquam.
+                Asperiores explicabo quis dolores deleniti minus. Architecto aliquam esse dolores iure cum totam
+                excepturi officia? Optio, unde laudantium!</span>
+            <span>Magni natus cum explicabo velit ex cupiditate nobis porro aliquid cumque repellendus laudantium
+                blanditiis at corrupti quasi odio ducimus recusandae deleniti, deserunt provident dolorum sit saepe
+                dolores dolore? Placeat, eaque!</span>
+            <span>Eaque fugiat accusantium aperiam cum, expedita ratione exercitationem corporis dolore beatae quas
+                illum incidunt atque ipsa quisquam in, earum inventore pariatur similique ipsam! Accusantium, quos
+                corrupti veritatis amet debitis consectetur!</span>
+            <span>Dolor dicta iure neque quas laboriosam error mollitia veniam a magni nesciunt, iste illum omnis rerum
+                temporibus soluta quam voluptatem qui. Natus quod et quas vitae saepe perspiciatis adipisci
+                laboriosam?</span>
+            <span>Consequatur qui esse delectus, ipsam totam quibusdam quo nam. Nostrum, non incidunt asperiores rem,
+                temporibus voluptatem ab nam amet hic, enim iste quia suscipit fugiat aliquam aliquid corrupti ea
+                atque?</span>
+            <span>Quidem similique architecto quod ipsam debitis ratione, vero labore. Quas quibusdam atque iste
+                tempore? Molestias, rem at. Quis, dolore veniam. Atque assumenda vel molestias nam animi iste, iusto
+                ullam enim.</span>
+            <span>Culpa numquam, quidem fuga sint ullam, inventore recusandae ratione beatae accusamus delectus
+                obcaecati quo! Vitae, fuga soluta quam cumque sapiente nemo voluptatum consectetur illum doloremque illo
+                voluptates. Veritatis, ipsa possimus.</span>
+            <span>Tempore quibusdam praesentium saepe doloribus dignissimos, eos sit totam accusantium temporibus
+                voluptatibus. Perspiciatis amet itaque nulla ea eaque aspernatur distinctio minima, consequatur beatae
+                quia dolor commodi vero, ut fugiat aut.</span>
+            <span>Excepturi facere veniam sunt dolor vitae, quaerat neque ipsam. Praesentium aliquid ab minus numquam
+                officia laborum neque tenetur culpa excepturi eius ratione quis corporis rem blanditiis sint, quisquam
+                similique error.</span>
+            <span>Cumque exercitationem numquam molestiae ex debitis, temporibus et! Provident incidunt eveniet, aliquam
+                illum quae odio ad reiciendis voluptatum exercitationem! Numquam hic deleniti et veniam asperiores,
+                quaerat unde voluptatibus. Tenetur, esse!</span>
+            <span>Modi soluta sunt velit nisi ea corporis nesciunt ut quibusdam fugit vero non voluptate nostrum,
+                asperiores tenetur iste deleniti magni ipsa! Aperiam itaque ea porro, vero culpa repellendus. Nesciunt,
+                temporibus!</span>
+            <span>Ullam itaque maxime dolore dicta dolorem, doloribus in sunt non, reiciendis vero, praesentium nesciunt
+                doloremque explicabo fugiat? In excepturi dolorem debitis ipsam quisquam mollitia? Soluta nostrum itaque
+                perferendis nam quaerat.</span>
+        </p>
+
+    </main>
+</body>
+
+</html>

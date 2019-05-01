@@ -9,65 +9,53 @@
 </head>
 
 <body>
-    <div>
-        <table width="100px" height="50px" border="2" cellpadding="30">
-            <tr align="center">
-                <td colspan="2">一</td>
-                <!-- <td>二</td> -->
-                <td rowspan="3">三</td>
-                <td rowspan="3">四</td>
-            </tr>
-            <tr align="center">
-                <td>五</td>
-                <td>六</td>
-                <!-- <td>七</td> -->
-                <!-- <td>八</td> -->
-            </tr>
-            <tr align="center">
-                <td>九</td>
-                <td>十</td>
-                <!-- <td>十一</td> -->
-                <!-- <td>十二</td> -->
-            </tr>
-            <tr align="center">
-                <td colspan="3">十三</td>
-                <!-- <td>十四</td>
-              <td>十五</td> -->
-                <td>十六</td>
-            </tr>
-        </table>
-    </div>
-    <div>
-        <h3>來個表單</h3>
-        <form action="" method="get">
-            <div>姓名 :<input type="text"></div>
-            <div>email:<input type="email"></div>
-            <p>
-                <input type="radio" value="men" />男
-                <input type="radio" value="women">女
-                <input type="radio" value="gay" />第三性
-            </p>
-            <p>
-                <input type="checkbox" />checkbox可複選
-                <input type="checkbox" />checkbox可複選
-                <input type="checkbox" />checkbox可複選
-            </p>
-            <br>
-            <select name="" id="">
-                <option value="" selected>選擇選擇選擇</option>
-                <option value="">123</option>
-                <option value="">123</option>
-                <option value="">123</option>
-            </select>
-            <br>
-            <p>
-            <input type="submit" value="送">
-            <input type="button" value="按">
-            <input type="reset" value="清">
-            </p>
-        </form>
 
-    </div>
+    
+
+    <!-- onblur代表離開輸入框後會發生 -->
+    <input type="text" id="fname" onblur=upperCase() />
+
+    <script type="text/javascript">
+        function upperCase() {
+            var x = document.getElementById("fname").value
+           alert('空白輸入')
+        }
+    </script>
+
+
+    
+    <!-- onchange代表離開轉換select選項會發生 -->
+    <select onchange="TestOnchange()">
+    <option>選項 A</option>
+    <option>選項 B</option>
+    </select>
+    <script language="javascript">
+        function TestOnchange(){
+            alert('轉換選項');
+        }
+    </script>
+<!-- 
+
+onclick	當使用者產生點擊某元素時，例如選擇某的選項或是按鈕（button）。
+onchange	當元素發生改變時，例如選擇下拉選單（select option）中的其他項目時。
+onblur	當游標失去焦點時，也就是點選其他區域時，通常用於填完表單的一個欄位。
+ondblclick	連續兩次 click 某特定元素，通常用於需要特定確認的情況。
+onfocus	當網頁元素被鎖定的時候，例如 textarea、input text。點擊輸入框出現提示
+onload	當頁面載入完成後立即觸發 function。
+onmousedown	滑鼠事件，當滑鼠的按鍵被按下的時候。
+onmouseover	滑鼠事件，當滑鼠游標移經某個元素或區塊時。
+onmousemove	滑鼠事件，當滑鼠游標移動時。
+onmouseout	滑鼠事件，當滑鼠移出某個元素或區塊時。
+onmouseup	滑鼠事件，當滑鼠的按鍵被放開的時候。
+onunload	當網友要準備離開網頁的時候。 -->
+
+
+
+
+
+
+
+
 </body>
 
 </html>

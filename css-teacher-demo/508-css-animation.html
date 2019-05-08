@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: relative;
+            margin: 10px;
+        }
+
+        .itemA {
+            animation: move 0s 0s infinite;
+        }
+
+        .itemB {
+            animation: move 3s 2s alternate-reverse;
+        }
+
+        .itemC {
+            animation: move 5s 3s 5,
+                wow 3s 0s 5;
+
+
+        }
+
+        @keyframes move {
+            0% {
+                left: 0px;
+                background-color: violet
+            }
+
+            50% {
+                left: 500px;
+                background-color: coral;
+                border-radius: 45%
+            }
+        }
+
+
+        @keyframes wow {
+
+            0% {
+                top: 0px;
+            }
+
+            50% {
+                top: 100px;
+            }
+
+            100% {
+                top: 0px;
+            }
+
+        }
+
+        .hihi {
+            width: 105px;
+            height: 100px;
+            border: 1px solid orangered;
+            border-top-left-radius: 40%;
+            border-top-right-radius: 45%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 46%;
+            position: relative;
+            animation: yo 3s 0s infinite;
+        }
+
+        .haha {
+            width: 105px;
+            height: 100px;
+            border: 1px solid black;
+            animation-name: yo;
+            animation-duration: 1s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: paused;
+            border-top-left-radius: 40%;
+            border-top-right-radius: 45%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 46%;
+        }
+
+        .haha:hover {
+            animation-play-state: running;
+
+        }
+
+
+
+        @keyframes yo {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(900deg);
+            }
+        }
+
+        @keyframes hi {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="item itemA"></div>
+    <div class="item itemB"></div>
+    <div class="item itemC"></div>
+    <div class="item itemA"></div>
+    <div class="item itemB"></div>
+    <div class="item itemC"></div>
+    <div class="item itemA"></div>
+    <div class="item itemB"></div>
+    <div class="item itemC"></div>
+
+    <div class="bg">
+        <div class="hihi"></div>
+        <div class="haha"></div>
+    </div>
+
+</body>
+
+</html>

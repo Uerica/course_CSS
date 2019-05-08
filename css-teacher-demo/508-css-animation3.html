@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: 0;
+    }
+
+    body{
+        background-color: #000;
+    }
+
+    li{
+        width: 100px;
+        height: 100px;
+        /* background-image:linear-gradient(120deg,#FFFFE0 10% ,#B0E0E6 50% , #87CEEB 90%); */
+        border:1.2px solid #fff;
+
+        /* background-color: #0fa; */
+        margin: 10px;
+        position:absolute;
+        animation: move 3s infinite linear alternate;
+    }
+
+    @keyframes move{
+                0%{ border-radius: 40% 60% 40% 60% / 50% 40% 60% 50%; }
+			 20%{ border-radius: 65% 35% 70% 30% / 40% 70% 30% 60%; }
+			 40%{ border-radius: 30% 70% 65% 35% / 55% 55% 45% 45%; }
+			 60%{ border-radius: 65% 35% 30% 70% / 70% 30% 70% 30%; }
+			 80%{ border-radius: 50% 50% 60% 40% / 45% 50% 50% 55%; }
+			100%{ border-radius: 45% 55% 50% 50% / 40% 45% 55% 60%; }
+
+
+    }
+		li:nth-child(3n){
+			animation: move 3s -2s infinite linear alternate;
+            /* border:1.2px solid #0fa; */
+            background-color: #0fa;
+            
+		}
+		li:nth-child(4n){
+			animation: move 3s -0.5s infinite linear alternate-reverse;
+            border:1.2px solid rgb(176, 231, 235);
+		}
+		li:nth-child(5n){
+			animation: move 3s -1s infinite linear alternate;
+            /* border:1.2px solid palevioletred; */
+		}
+		li:hover{
+			animation-play-state:  running;
+		}
+		
+	
+
+</style>
+
+</head>
+<body>
+    
+<ul>
+    <li class="1"></li>
+    <li class="2"></li>
+    <li class="3"></li>
+    <li class="4"></li>
+    <li class="5"></li>
+    <li class="6"></li>
+    <li class="7"></li>
+    <li class="8"></li>
+    <li class="9"></li>
+    <!-- <li class="10"></li>
+    <li class="11"></li>
+    <li class="12"></li>
+    <li class="13"></li>
+    <li class="14"></li>
+    <li class="15"></li>
+    <li class="16"></li>
+    <li class="17"></li>
+    <li class="18"></li>
+    <li class="19"></li>
+    <li class="20"></li>
+    <li class="21"></li>
+    <li class="22"></li>
+    <li class="23"></li>
+    <li class="24"></li>
+    <li class="25"></li>
+    <li class="26"></li>
+    <li class="27"></li>
+    <li class="28"></li>
+    <li class="29"></li>
+    <li class="30"></li> -->
+</ul>
+
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css-my-practice/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css-my-practice/dist/assets/owl.theme.default.min.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="hihi owl-carousel owl-theme">
+        <div><img src="https://api.fnkr.net/testimg/350x200/FFCED1/FFF/?text=A" alt=""> </div>
+        <div><img src="https://api.fnkr.net/testimg/350x200/FFFFD1/FFF/?text=A" alt=""> </div>
+        <div><img src="https://api.fnkr.net/testimg/350x200/FFCEFF/FFF/?text=A" alt=""> </div>
+        <div><img src="https://api.fnkr.net/testimg/350x200/FFFED1/FFF/?text=A" alt=""> </div>
+        <div><img src="https://api.fnkr.net/testimg/350x200/CCCED1/FFF/?text=A" alt=""> </div>
+        <div><img src="https://api.fnkr.net/testimg/350x200/FFEDFF/FFF/?text=A" alt=""> </div>
+        <div><img src="https://api.fnkr.net/testimg/350x200/FFFEDF/FFF/?text=A" alt=""> </div>
+    </div>
+
+    <div class="yoyo owl-carousel owl-theme">
+            <div><img src="https://api.fnkr.net/testimg/350x200/FFCED1/FFF/?text=A" alt=""> </div>
+            <div><img src="https://api.fnkr.net/testimg/350x200/FFFFD1/FFF/?text=A" alt=""> </div>
+            <div><img src="https://api.fnkr.net/testimg/350x200/FFCEFF/FFF/?text=A" alt=""> </div>
+            <div><img src="https://api.fnkr.net/testimg/350x200/FFFED1/FFF/?text=A" alt=""> </div>
+            <div><img src="https://api.fnkr.net/testimg/350x200/CCCED1/FFF/?text=A" alt=""> </div>
+            <div><img src="https://api.fnkr.net/testimg/350x200/FFEDFF/FFF/?text=A" alt=""> </div>
+            <div><img src="https://api.fnkr.net/testimg/350x200/FFFEDF/FFF/?text=A" alt=""> </div>
+        </div>
+
+
+    <script src="/css-my-practice/dist/jquery-3.4.1.min.js"></script>
+    <script src="/css-my-practice/dist/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hihi").owlCarousel({
+                center: true,
+                nav:true,
+                items: 2,
+                loop: true,
+                margin: 10,
+                autoplay:true,
+                autoplayTimeout:1000,
+                autoplayHoverPause:true,
+                responsive: {
+                    600: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5
+                    }
+                }
+            });
+        });
+
+
+        $(document).ready(function () {
+            $(".yoyo").owlCarousel({
+                center: true,
+                nav:true,
+                items: 2,
+                loop: true,
+                margin: 10,
+                autoplay:true,
+                autoplayTimeout:1000,
+                autoplayHoverPause:true,
+                responsive: {
+                    600: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

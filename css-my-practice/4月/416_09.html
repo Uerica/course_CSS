@@ -9,26 +9,41 @@
 			padding: 0;
 			list-style: none;
 		}
+		.hihi{
+			width: 100%;
+			max-width: 1200px;
+			margin: auto;
+			background-color: #ccc;
+		}
 		.area{
-			width: 500px;
-			height: 300px;
+			width: 100%;
+			box-sizing: border-box;
 			border:3px solid #f00;
 			margin: auto;
 			overflow: hidden;
 		}
 		.content{
-			width: 1500px;
+			width: 300%;
 			font-size: 0;
 			position: relative;
 			left: 0;
 			transition: .5s;
+			display:flex;
 		}
+
 		.content.show1{ left: 0; }
-		.content.show2{ left: -500px; }
-		.content.show3{ left: -1000px; }
+		.content.show2{ left:-100%; }
+		.content.show3{ left:-200%; }
+		
+		
 		.content li{
 			display: inline-block;
 			font-size: 16px;
+		}
+
+		.content img{
+			width: 100%;
+			height: 100%;
 		}
 
 
@@ -47,33 +62,37 @@
 </head>
 <body>
 	
-
-
-	<div class="area">
-		<ul class="content show1">
-			<li>
-				<img src="https://api.fnkr.net/testimg/500x300/ffCED1/FFF/?text=A">
-			</li>
-			<li>
-				<img src="https://api.fnkr.net/testimg/500x300/00ffD1/FFF/?text=B">
-			</li>
-			<li>
-				<img src="https://api.fnkr.net/testimg/500x300/00CEff/FFF/?text=C">
-			</li>
-		</ul>
-	</div>
-
+<div class="hihi">
 	<div class="btn-group">
 		<div class="btn btn1 active">A</div>
 		<div class="btn btn2">B</div>
 		<div class="btn btn3">C</div>
 	</div>
+	<div class="area">
+		<ul class="content show1">
+			<li>
+				<img src="https://api.fnkr.net/testimg/1200x600/ffCED1/FFF/?text=A">
+			</li>
+			<li>
+				<img src="https://api.fnkr.net/testimg/1200x600/00ffD1/FFF/?text=B">
+			</li>
+			<li>
+				<img src="https://api.fnkr.net/testimg/1200x600/00CEff/FFF/?text=C">
+			</li>
+		</ul>
+	</div>
+</div>
+	<!-- <div class="btn-group">
+		<div class="btn btn1 active">A</div>
+		<div class="btn btn2">B</div>
+		<div class="btn btn3">C</div>
+	</div> -->
 
 
 
 
 
-<script type="text/javascript" src="jquery-3.4.0.min.js"></script>
+<script type="text/javascript" src="/css-my-practice/dist/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
 	
 	$('.btn1').click(function(){

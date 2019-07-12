@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin layout</title>
+<style>
+
+.itemgroup{
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+.item1{
+    width: 60%;
+    height: 200px;
+    background-color: cornflowerblue;
+    margin-right: -20%;
+    float: left;
+    position: relative;
+    z-index: 1;
+    }
+
+.item2{
+    width: 60%;
+    height: 200px;
+    background-color:deeppink;
+    float: left;
+    position: relative;
+    top: 100px;
+    right: 300px;
+    z-index: 0;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.box{
+    background-color: pink;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid;
+    position: relative;
+}
+
+.pic{
+    width: 100px;
+    height: 100px;
+    background-color: #abc;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: -50px;
+}
+
+.txt{
+    position: absolute;
+    top: 0
+}
+</style>
+</head>
+
+<body>
+
+    <div class="itemgroup">
+        <div class="item1"></div>
+        <div class="item2">999</div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="box">
+        <div class="pic"></div>
+        <div class="txt">Lor ciatis ullam dolore quos mo!di quis optio, enim delectus nam illo harum</div>
+    </div>
+    
+</body>
+</html>

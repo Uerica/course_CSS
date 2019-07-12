@@ -2,11 +2,54 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>position fixed</title>
+	<style>
+	
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.lightbox{
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,.5);
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+
+	.pop-contain{
+		width: 600px;
+		height: 400px;
+		background-color: #abc;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		padding: 30px;
+	}
+
+	.btn-close{
+		width: 40px;
+		height: 40px;
+		background-color: #000;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		line-height: 40px;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+</style>
 </head>
 <body>
-	
-
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus asperiores modi nulla quo, accusamus sed quos rem nisi fuga eius, soluta voluptate pariatur officia laudantium. Et labore perspiciatis, eaque?</p>
 	<p>Quaerat, perspiciatis laudantium facere ad tempora dolorum, ullam voluptates nisi impedit esse eum ratione hic voluptatum voluptate sunt rem quia minus velit ab fugiat! Cupiditate expedita rem quidem eaque soluta!</p>
 	<p>Qui delectus, necessitatibus. Aut iure illo eum magnam voluptas quas, voluptate! Molestias voluptas explicabo dolores, tenetur voluptatum aperiam quaerat aliquam, eveniet omnis sequi dicta dolor deleniti porro. Labore, numquam, in.</p>
@@ -62,46 +105,7 @@
 
 
 
-	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-			list-style: none;
-		}
-		.lightbox{
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0,0,0,.5);
-			position: fixed;
-			top: 0;
-			left: 0;
-		}
-		.pop-contain{
-			width: 600px;
-			height: 400px;
-			background-color: #fff;
-			position: fixed;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			margin: auto;
-			padding: 30px;
-		}
-		.btn-close{
-			width: 40px;
-			height: 40px;
-			background-color: #000;
-			color: #fff;
-			text-decoration: none;
-			text-align: center;
-			line-height: 40px;
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
-	</style>
+	
 
 	<div class="lightbox"></div>
 	<div class="pop-contain">

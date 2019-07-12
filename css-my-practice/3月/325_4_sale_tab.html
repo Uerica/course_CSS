@@ -1,19 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-
-
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        .img {
-            width: 100%;
-            height: 300px;
-            background-color: #ccc;
-        }
-
+        /* 父層寫1200px,margin auto讓子層置中,text-align:left讓子層文字靠左*/
+        /* (340+20+20+10+10)*3 = 1200*/
+        
         .itemgroup {
             width: 1200px;
             margin: auto;
@@ -26,22 +19,25 @@
             padding: 10px;
             float: left;
             position: relative;
-
         }
 
-        
+        .img {
+            width: 100%;
+            height: 300px;
+            background-color: #ccc;
+        }
+
+
         .sale{
             background-color: red;
             color:#fff;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: bold;
             width: 100px;
             position: absolute;
             top: 20px;
             left: -10px;
         }
-
-       
 
         .a{
             width:0;
@@ -52,48 +48,30 @@
             top: 100%;
             left: 0;
             opacity: .5;
-
         }
 
         p{
             color:cornflowerblue;
         }
 
-
-        /* .sale{
-            background-color: red;
-            color:#fff;
-            font-size: 20px;
-            font-weight: bold;
-            width: 100px;
-            position: absolute;
-            top: 10px;
-            left: -2px;
-        } */
-
-      
     </style>
 
 </head>
 
 <body>
-
+    <!-- html結構中,使用span來做三角形陰影 -->
     <div class="itemgroup">
-        <div class="item">
-            <div class="sale">50% OFF<span class="a"></span></div>
-            <div class="img"></div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos soluta officia eos sunt voluptate illum
-                iste, molestias rem minus est minima corporis eveniet hic quisquam. Voluptatibus eveniet maxime autem
-            </p>
-        </div>
-        <div class="item">
-            <div class="sale">50% OFF<span class="a"></span></div>
-            <div class="img"></div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos soluta officia eos sunt voluptate illum
-                iste, molestias rem minus est minima corporis eveniet hic quisquam. Voluptatibus eveniet maxime autem
-            </p>
 
+        <div class="item">
+            <div class="sale">50% OFF<span class="a"></span></div>
+            <div class="img"></div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos soluta officia eos sunt voluptate illum
+                iste, molestias rem minus est minima corporis eveniet hic quisquam. Voluptatibus eveniet maxime autem
+            </p>
+           
+                 
         </div>
+
         <div class="item">
             <div class="sale">50% OFF<span class="a"></span></div>
             <div class="img"></div>
@@ -101,8 +79,16 @@
                 iste, molestias rem minus est minima corporis eveniet hic quisquam. Voluptatibus eveniet maxime autem
             </p>
         </div>
+
+        <div class="item">
+            <div class="sale">50% OFF<span class="a"></span></div>
+            <div class="img"></div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos soluta officia eos sunt voluptate illum
+                iste, molestias rem minus est minima corporis eveniet hic quisquam. Voluptatibus eveniet maxime autem
+            </p>
+        </div>
+
     </div>
-
 
 </body>
 

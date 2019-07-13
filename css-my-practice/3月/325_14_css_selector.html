@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>css selector</title>
+    <style>
+        div {
+            border: 2px red solid;
+            padding: 50px;
+            background-color: #fff;
+        }
+
+        .a>div>div>div {
+            background-color: aqua;
+        }
+
+
+        h1~div>p {
+            color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="a">a
+        <div>2
+            <div>3
+                <div>4
+                    <div>5
+                        <div>6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>hihi</h1>
+    <p>I'm p</p>
+    <p>I'm p</p>
+    <div>I'm div<p>I'm p</p></div>
+    <p>I'm p</p>
+    <div>I'm div</div>
+    <p>I'm p</p>
+
+
+    <h2>hihi</h2>
+    <p>I'm p</p>
+    <div>I'm div<p>I'm p</p></div>
+
+</body>
+
+</html>

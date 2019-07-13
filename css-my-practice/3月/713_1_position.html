@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+
+    <!-- note
+    屬性值:static(預設,依照正常資料流向),relative(相對定位),fixed(固定定位),absolute(絕對定位),sticky
+    屬性:top,left,right,bottom
+    -->
+
+    <!-- fixed
+    Q:設定後尚未設定屬性會看不到
+    設定後不佔位
+    直接定位在視窗,參考點為整個視窗
+    即使滑動滾輪也不會改變位置 -->
+
+    <!-- relativebox
+    設定後會佔原本的位置
+    以自己為參考點做相對位移
+    z軸都高於沒有設定定位的相鄰區塊
+    -->
+
+    <!-- absolute
+    設定後會不佔位
+    以有定位的父層做參考點,若沒有則定在第一屏視窗
+
+    -->
+
+    <style>
+    
+    .fixed_a{
+        width: 50px;
+        height: 50px;
+        background-color:palevioletred;
+        color: palegoldenrod;
+        text-align: center;
+        position:fixed;
+        right:0;
+        top: -20%;
+        bottom: 0;
+        margin: auto 0;
+        opacity: .8;
+    }
+
+    .fixed_b{
+        width: 50px;
+        height: 50px;
+        background-color:palevioletred;
+        color: palegoldenrod;
+        text-align: center;
+        position:fixed;
+        right:0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        opacity: .8;
+    }
+
+    .fixed_c{
+        width: 50px;
+        height: 50px;
+        background-color:palevioletred;
+        color: palegoldenrod;
+        text-align: center;
+        position:fixed;
+        right:0;
+        top: 0;
+        bottom: -20%;
+        margin: auto 0;
+        opacity: .8;
+    }
+
+    .no_fixed{
+        width: 200px;
+        height: 200px;
+        background-color:paleturquoise;
+        color: purple;
+        text-align: center;
+        line-height: 200px;
+    }
+
+    .fixed_cover{
+        width: 200px;
+        height: 200px;
+        background-color:rebeccapurple;
+        position:fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        opacity: .8;
+        color: #fff;
+        text-align: center;
+        line-height: 200px;
+    }
+
+    .relativebox{
+        overflow: hidden;
+    }
+    
+    .relativebox>div{
+        width: 300px;
+        height: 200px;
+        background-color:royalblue;
+        float: left;
+        margin:30px 10px 10px;
+        color:#fff;
+        line-height: 200px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #relative{
+        position: relative;
+        background-color:purple;
+        opacity: .7;
+        left: 100px;
+    }
+
+    .absolutebox>div{
+        width: 100px;
+        height: 100px;
+        margin: 10px 0;
+        text-align: center;
+        line-height: 100px;
+        background-color: #abc;
+        color:papayawhip;
+    }
+
+    .absolutebox{
+        position: relative;
+    }
+
+    #absolute{
+        background-color:purple;
+        position: absolute;
+        top:50px;
+        left: 50px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="fixedbox">
+    <div class="fixed_a"><p>fixed a</p></div>
+    <div class="fixed_b"><p>fixed b</p></div>
+    <div class="fixed_c"><p>fixed c</p></div>
+    <div class="no_fixed"><p>I'm no fixed</p></div>
+    <div class="no_fixed"><p>I'm no fixed</p></div>
+    <div class="no_fixed"><p>I'm no fixed</p></div>
+    <div class="no_fixed"><p>I'm no fixed</p></div>
+    <div class="no_fixed"><p>I'm no fixed</p></div>
+    <div class="no_fixed"><p>I'm no fixed</p></div>
+    <div class="no_fixed"><p>I'm no fixed</p></div>
+    <div class="no_fixed"><p>I'm no fixed</p></div>
+    <div class="no_fixed"><p>I'm no fixed</p></div>
+    <div class="fixed_cover">I'm fixed cover</div>
+    </div>
+
+
+    <div class="relativebox">
+        <div class="no_relative">I'm no relative</div>
+        <div class="no_relative">I'm no relative</div>
+        <div id="relative">I'm relative</div>
+        <div class="no_relative">I'm no relative</div>
+        <div class="no_relative">I'm no relative</div>
+    </div>
+
+    <div class="absolutebox">
+        <div class="no_absolute ">I'm no absolute</div>
+        <div class="no_absolute">I'm no absolute</div>
+        <div id="absolute">I'm absolute</div>
+        <div class="no_absolute">I'm no absolute</div>
+        <div class="no_absolute">I'm no absolute</div>
+    </div>
+</body>
+</html>

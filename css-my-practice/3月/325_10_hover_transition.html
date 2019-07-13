@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>hover_transition_從下滑入</title>
+    <style>
+
+    /* 設定margin-top:100%可以使div完完全全離開父層,
+    再設定overflow:hidden使超出父層的子層隱藏,
+    最後使用hover搭配動畫來呈現動態效果 */
+
+    .box3{
+        width: 300px;
+        position: relative;
+    }
+
+    img{
+        width: 100%;
+        height: 200px;
+        background-color: paleturquoise;
+        display: block;
+    }
+
+    .txt{
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transition: 2.5s;
+        margin-top: 100%;
+        overflow: hidden;
+    }
+
+    .box3:hover .txt{
+        background-color:palegoldenrod;
+        margin-top:0;
+
+    }
+    </style>
+</head>
+    <body>
+        <div class="box3">
+            <img src="" alt="">
+            <div class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, magni assumenda voluptatem amet inventore eius maiores suscipit ipsa, reiciendis provident officiis nisi facilis velit quae non animi voluptates, hic aperiam?</div>
+        </div>
+    </body>
+</html>

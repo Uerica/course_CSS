@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>float clear</title>
     <style>
-        .item-group {
-            background-color: #ccc;
+        .box {
+            background-color: pink;
             width: 1200px;
             margin: auto;
         }
 
         .item {
             width: 380px;
-            height: 100px;
+            height: 300px;
             margin: 10px;
-            background-color: aqua;
+            background-color: khaki;
             float: left;
         }
 
-        .item-group::after {
-            content: '';
-            background-color: #fff;
+        .box::after {
+            content: "I'm clear in after";
+            font-size: 20px;
+            line-height: 40px;
+            color: khaki;
+            text-align: center;
+            background-color: cornflowerblue;
+            height: 40px;
             display: block;
             clear: both;
         }
     </style>
 </head>
-
 <body>
-    <div class="item-group">
+    <div class="box">
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>

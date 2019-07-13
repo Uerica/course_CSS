@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>boder triangle</title>
+<style>
+
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    .triangle{
+        margin: 50px;
+    }
+
+    /* 右上三角形,上邊 + 右邊 */
+    .a_triangle{
+        width: 0px;
+        height: 0px;
+        border-top:pink 80px solid;
+        border-right:powderblue 80px solid;
+        border-bottom:transparent 80px solid;
+        border-left:transparent 80px solid;
+        margin-bottom: 50px;
+    }
+
+    /* 右下三角形,下邊 + 右邊 */
+    .b_triangle{
+        width: 0px;
+        height: 0px;
+        border-top:transparent 80px solid;
+        border-right:powderblue 80px solid;
+        border-bottom:cornflowerblue 80px solid;
+        border-left:transparent 80px solid;
+    }
+
+     /* 左下三角形,下邊 + 左邊 */
+    .c_triangle{
+        width: 0px;
+        height: 0px;
+        border-top:transparent 80px solid;
+        border-right:transparent 80px solid;
+        border-bottom:cornflowerblue 80px solid;
+        border-left:khaki 80px solid;
+    }
+
+    /* 左上三角形,上邊 + 左邊 */
+    .d_triangle{
+        width: 0px;
+        height: 0px;
+        border-top:pink 80px solid;
+        border-right:transparent 80px solid;
+        border-bottom:transparent 80px solid;
+        border-left:khaki 80px solid;
+    }
+
+    /* 右上三角形,上邊 + 左邊透明 */
+    .aaa{
+        width: 0;
+        height: 0;
+        border-top:pink 80px solid;
+        /* border-right:powderblue 80px solid; */
+        /* border-bottom:cornflowerblue 80px solid; */
+        border-left:transparent 80px solid;
+    }
+
+     /* 左上三角形,上邊 + 右邊透明 */
+    .bbb{
+        width: 0;
+        height: 0;
+        border-top:pink 80px solid;
+        border-right:transparent 80px solid;
+        /* border-bottom:cornflowerblue 80px solid;
+        border-left:khaki 80px solid; */
+    }
+
+ 
+    /* 左下三角形,下邊 + 右邊透明 */
+    .ccc{
+        width: 0;
+        height: 0;
+        /* border-top:pink 80px solid; */
+        border-right:transparent 80px solid;
+        border-bottom:cornflowerblue 80px solid;
+        /* border-left:khaki 80px solid; */
+    }
+
+    /* 右下三角形,下邊 + 左邊透明 */
+    .ddd{
+        width: 0;
+        height: 0;
+        /* border-top:transparent 80px solid;
+        border-right:powderblue 80px solid; */
+        border-bottom:cornflowerblue 80px solid;
+        border-left:transparent 80px solid;
+    }
+
+
+   
+
+    .box{
+        width: 1200px;
+    }
+
+</style>
+
+
+</head>
+<body>
+    <div class="box">
+    <div class="a_triangle triangle"></div>
+    <div class="b_triangle triangle"></div>
+    <div class="c_triangle triangle"></div>
+    <div class="d_triangle triangle"></div>
+    <div class="aaa triangle"></div>
+    <div class="bbb triangle"></div>
+    <div class="ccc triangle"></div>
+    <div class="ddd triangle"></div>
+</div>
+</body>
+</html>

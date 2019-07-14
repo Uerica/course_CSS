@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>before after</title>
+
+    <!-- note
+    before在指定元素的前面
+    after在指定元素的後面
+    指定後會繼承指定元素的屬性 
+    通常可以使用在裝飾,標語,註記..等
+    好處是不會影響html與css的閱讀及seo
+    -->
+
+</head>
+<style>
+
+    .text{
+        color:gold;
+        font-weight: bold;
+    }
+
+    .text::before{
+        content: "I'm before content";
+        color: hotpink;
+    }
+
+    .text::after{
+        content: "I'm before content";
+        color: dodgerblue;
+    }
+    
+    /* todolist */
+    .toDoList li{
+        list-style: none;
+        width: 200px;
+        height: 30px;
+        background-color:palegoldenrod;
+        margin: 1%;
+        color: purple;
+        line-height: 30px;
+    }
+
+    .toDoList .done{
+        background-color:deepskyblue;
+        color:palegoldenrod;
+        text-decoration: line-through;
+    }
+
+
+</style>
+
+<body>
+    <div class="text"> I'm real content </div>
+    
+    <!-- todolist -->
+    <div class="toDoList">
+        <ul>
+            <li>study css</li>
+            <li>study javascript</li>
+            <li>study jQuery</li>
+            <li>study tweenMax</li>
+            <li>coding</li>
+        </ul>
+    </div>
+
+<script>
+
+    var list = document.querySelectorAll('ul');
+    list[0].addEventListener('click',function(e){
+        console.log(e.target.tagName)
+        if(e.target.tagName == 'LI'){
+            e.target.classList.toggle('done');
+        }
+    },false)
+    
+</script>
+</body>
+</html>
